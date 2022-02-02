@@ -1,3 +1,7 @@
+$(window).scroll(function() {
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 600);
+});
+
 function replaceText() {
     obj = document.getElementById("slowlyShow");
     console.log(obj);
