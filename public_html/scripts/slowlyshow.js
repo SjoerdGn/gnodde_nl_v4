@@ -5,19 +5,19 @@ function replaceText() {
         let k = i;
         setTimeout(function () {
             if (k % 4 == 0) {
-                obj.innerText = 'I am a hydrologist';
+                obj.innerText = 'I am a data scientist';
             
             }
             else if (k % 4 == 1) {
-                obj.innerText = 'I am a cyclist';
+                obj.innerText = 'I am a hydrologist';
             
             }
             else if (k % 4 == 2) {
-                obj.innerText = 'I am a hobby programmer';
+                obj.innerText = 'I am a cyclist';
             
             }
             else {
-                obj.innerText = 'I am a data scientist';
+                obj.innerText = 'I am a hobby programmer';
             }
         }, 1500*(k+2));
 

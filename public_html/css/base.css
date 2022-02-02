@@ -3,24 +3,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto+Mono:wght@100&display=swap');
 
-
 /* base styles */
+
 * {
-  margin: 0;
-  font-family: "Roboto Mono";
-  color: rgb(220, 220, 220);
-  /*background-color: rgb(233, 233, 233);*/
+    margin: 0;
+    font-family: "Roboto Mono";
+    color: rgb(235, 235, 235);
+    overflow-x: hidden;
+    /*background-color: rgb(233, 233, 233);*/
 }
+
+:root {
+    --c1: #d4f2db;
+    --c2: #cef7a0;
+    --c3: #ba9790;
+    --c4: #914d76;
+    --c5: #69353f;
+}
+
+
+/*
+:root {
+    --c1: #C6878F;
+    --c2: #B79D94;
+    --c3: #969696;
+    --c4: #67697C;
+    --c5: #253D5B;
+  }
+*/
 
 body {
     background-image: url('../img/mountain_1.png');
     background-size: 100%;
     padding: 3em;
-  }
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(220, 220, 220);
+    color: rgb(235, 235, 235);
 }
 
 .center-screen {
@@ -28,114 +48,207 @@ h1 {
     align-items: center;
     text-align: center;
     min-height: 100vh;
-  }
-
-p::after{
-  content: "\a";
-  white-space: pre;
 }
+
+p::after {
+    content: "\a";
+    white-space: pre;
+}
+
 .navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 2px solid #aaaaaa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(235, 235, 235);
 }
 
 img {
-  padding: 20px 20px 20px 0px;
-  margin: auto;
+    padding: 20px 20px 20px 0px;
+    margin: auto;
 }
 
 .footer {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 2px solid #aaaaaa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(235, 235, 235);
 }
 
 .footer .links {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .footer a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
 }
-
-
 
 
 /* NAVBAR */
 
+
 /* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+    padding: .2em .2em .2em .5em;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
     float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
     background-color: #ddd;
     color: rgb(77, 77, 77);
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
     background-color: rgb(40, 40, 94);
     color: white;
-  }
+}
 
 
-  /* OLD NAVBAR */
-
+/* OLD NAVBAR */
 
 .navbar h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    color: #3f3f3f;
 }
 
 .navbar .links {
-  margin-left: auto;
+    margin-left: auto;
 }
+
 .navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
 }
+
 .navbar a:hover {
-  color: rgb(0, 0, 155);
-  text-decoration: underline;
+    color: rgb(0, 0, 155);
+    text-decoration: underline;
 }
 
 .footer a:hover {
-  color: rgb(0, 0, 155);
-  text-decoration: underline;
+    color: rgb(0, 0, 155);
+    text-decoration: underline;
 }
+
 .content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .code {
-  color:rgb(190, 190, 190);
-  background-color: rgb(0, 0, 0);
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+    color: rgb(190, 190, 190);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+#section1 {
+    background-color: rgb(77, 77, 77);
+    padding: 1em;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background: var(--c2);
+}
+
+.blue h1 {
+    color: var(--c5);
+}
+
+.blue p {
+    color: var(--c5);
+}
+
+.blue a {
+    color: var(--c5);
+}
+
+.red {
+    background: var(--c4);
+}
+
+.pink {
+    background: var(--c1);
+    overflow: hidden;
+}
+
+.pink h1 {
+    color: var(--c5);
+}
+
+.pink p {
+    color: var(--c5);
+}
+
+.dark {
+    background: var(--c3);
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 132px;
+}
+
+#wavered .shape-fill {
+    fill: var(--c4);
+}
+
+#wavedark .shape-fill {
+    fill: var(--c3);
+}
+
+#wavepink .shape-fill {
+    fill: var(--c1);
+}
+
+#waveblue .shape-fill {
+    fill: var(--c2);
 }
