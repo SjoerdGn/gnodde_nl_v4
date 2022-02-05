@@ -13,6 +13,7 @@
     /*background-color: rgb(233, 233, 233);*/
 }
 
+/* 22223b-4a4e69-9a8c98-c9ada7-f2e9e4 */
 :root {
     --c1: #d4f2db;
     --c2: #cef7a0;
@@ -68,6 +69,7 @@ h1 {
 h3 {
     margin-bottom: 0.5em;
 }
+
 .center-screen {
     display: flex;
     align-items: center;
@@ -173,9 +175,7 @@ img {
 }
 
 
-#topnav2 {
-    max-width: 1200px;
-}
+
 
 /* Change the color of links on hover */
 
@@ -192,6 +192,31 @@ img {
     color: rgb(235, 235, 235);
 }
 
+#topnav2 {
+    max-width: 90%;
+}
+/*
+position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 5em;
+    padding-right: 18%;
+    padding-left: 18%;
+    max-width: 50%;
+    min-width: 420px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -0%);
+*/
+
+#maxwidth600 {
+    max-width: calc(42% + 100px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
 
 /* OLD NAVBAR */
 
@@ -246,17 +271,23 @@ section {
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw;
-    max-width: 600px;
-    margin-right:auto;
-    margin-left:auto;
+    padding-top: 5em;
     
+    width: calc(42% + 100px);
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -0%);
+    padding-right: calc(24% - 50px);
+    padding-left: calc(24% - 50px);
+
 }
+
 
 section p {
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: .5em;
+    margin-bottom: .8em;
+    margin-top: .8em;
 }
 
 .centered_header {
@@ -335,8 +366,12 @@ section p {
 }
 
 section img.proj_img {
-    width: auto;
+    width: 100%;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#gausscop {
+    cursor: pointer;
 }

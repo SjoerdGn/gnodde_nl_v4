@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/base.css?v=1.1">
+    <link rel="stylesheet" href="css/base.css?v=1.2">
 </head>
 
 <body onload="replaceText()">
 
 
-    <div class="topnav">
+    <div class="topnav" id="topnav2">
         <h1>GNODDE.NL</h1>
         <h2>- Sjoerd Gnodde</h2>
         <a href="contact.html">Contact</a>
@@ -18,26 +18,30 @@
     </div>
 
     <div>
-        <h1 class='centered_header'>Projects</h1>
-        <h3 class='centered_header'>An overview of some of 
-            projects I worked in, either for study, professionaly or hobby.</h3>
+        <h1 class='centered_header' id="maxwidth600">Projects</h1>
+        <h3 class='centered_header' id="maxwidth600">An overview of some of 
+            projects I worked in, either for study, professionaly or as a hobby.</h3>
 
     </div>
 
     <section class="blue">
+
         <h1> Non-Parametric Bayesian Network Hydrologic Model x copulabayesnet</h1>
         <p>
             I graduated from Water Management at TU Delft in 2020 with 
             <a href="https://repository.tudelft.nl/islandora/object/uuid%253Acaf354af-3dbf-48aa-9cef-2eee2a9147a3">the thesis called "A Non-Parametric Bayesian Network"
             Hydrologic Model: A Case Study of a Lowland Catchment</a>.
         </p>
-        <img class='proj_img' src="img/ECDF.gif" alt="GIF of construction of copula" title="Construction of copula" />
+        <img class='proj_img' id="gausscop" src="img/ECDF.gif" onclick="changeImage('gausscop', 'img/ECDF.gif','img/gaussian_2_var.png')" alt="GIF of construction of copula" title="Construction of copula" />
+        <p>
+            Click om the image to see a static variant which shows the construction of a copula.
+        </p>
+        <br />
         <p>
             <a href="https://copulabayesnet.readthedocs.io/en/latest/">copulabayesnet</a>
             
         </p>
-
-
+ 
     </section>
     <section class="red">
         <h1>Serious game paper</h1>
@@ -65,5 +69,5 @@
         </svg>
     </section>
 </body>
-
+<script src="scripts/projects.js"></script>
 </html>
