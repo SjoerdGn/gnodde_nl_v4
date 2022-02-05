@@ -216,6 +216,7 @@ position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
+    min-width: calc(400px)
 }
 
 /* OLD NAVBAR */
@@ -279,6 +280,7 @@ section {
     transform: translate(-50%, -0%);
     padding-right: calc(24% - 50px);
     padding-left: calc(24% - 50px);
+    min-width: calc(400px)
 
 }
 
@@ -319,6 +321,7 @@ section p {
 .pink {
     background: var(--c1);
     overflow: hidden;
+    color: var(--c5)
 }
 
 .pink h1 {
@@ -326,6 +329,11 @@ section p {
 }
 
 .pink p {
+    color: var(--c5);
+}
+
+
+.pink a {
     color: var(--c5);
 }
 
