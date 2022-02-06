@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=1.2">
 </head>
+
 <body onload="replaceText()">
 
-<div class="topnav">
-	<a class="active" href="index.html">Home</a>
-	<a href="about-me.html">About me</a>
-	<a href="projects.html">Projects</a>
-	<a href="contact.html">Contact</a>
-    
-</div> 
 
-<div>
-<h1>GNODDE.NL</h1>
-<h2>Sjoerd Gnodde</h2>
+    <div class="topnav" id="topnav2">
+        <h1>GNODDE.NL</h1>
+        <h2>- Sjoerd Gnodde</h2>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="about-me.html">About me</a>
+        <a href="index.html">Home</a>
+    </div>
 
-</div>
+    <div>
+        <h1 class='centered_header' id="maxwidth600">Projects</h1>
+        <h3 class='centered_header' id="maxwidth600">An overview of some of 
+            projects I worked in, either for study, professionaly or as a hobby.</h3>
+
+    </div>
+
+    <section class="blue">
+
+        <h1> Non-Parametric Bayesian Network Hydrologic Model x copulabayesnet</h1>
+        <p>
+            I graduated from Water Management at TU Delft in 2020 with 
+            <a href="https://repository.tudelft.nl/islandora/object/uuid%253Acaf354af-3dbf-48aa-9cef-2eee2a9147a3">the thesis called "A Non-Parametric Bayesian Network"
+            Hydrologic Model: A Case Study of a Lowland Catchment</a>.
+        </p>
+        <img class='proj_img' id="gausscop" src="img/ECDF.gif" onclick="changeImage('gausscop', 'img/ECDF.gif','img/gaussian_2_var.png')" alt="GIF of construction of copula" title="Construction of copula" />
+        <p>
+            Click om the image to see a static variant which shows the construction of a copula.
+        </p>
+        <br />
+        <p>
+            <a href="https://copulabayesnet.readthedocs.io/en/latest/">copulabayesnet</a>
+            
+        </p>
+ 
+    </section>
+    <section class="red">
+        <h1>Serious game paper</h1>
+        <p>https://link.springer.com/chapter/10.1007/978-3-030-34350-7_38</p>
+        <div class="wave1" id="waveblue">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </section>
+    <section class="pink">
+        <h1>A bit of humour in grim times: </br> Covid cases Tour de France Profile</h1>
+        <p>In the summer of 2021, during the Tour de France, I found the resemblence of the chart of the weekly rolling average Covid cases per day to the elevation profile of a mountain stage in the 
+            Tour de France quite remarkable. After finding a nice Dutch Covid cases source and with some Matplotlib tweaking, an almost identical plot was quickly built.
+            </p>
+            <img class='proj_img'  src="img/TDF_corona_edition_icons.png" alt="Covid cases as Tour de France stage Profile" title="Covid cases as Tour de France stage Profile" />
+            
+            <p>
+                See the repository of this project 
+            <a href="https://github.com/SjoerdGn/covid-tdf-profile"> on GitHub</a>
+
+            </p>
+        <div class="wave1" id='wavered'>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+        </div>
+    </section>
+    <section class="red">
+        <h1>MLFlow Collaboration wrapper</h1>
+        <p>https://gitlab.com/hetwaterschapshuis/kenniscentrum/tooling/mlflowcollab</p>
+        <div class="wave1" id='wavepink'>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </section>
 </body>
-</html> 
+<script src="scripts/projects.js"></script>
+</html>
