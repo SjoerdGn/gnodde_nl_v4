@@ -9,9 +9,7 @@
     animation: type 6s steps(60, end);
 }
 */
-html {
-    height: 100%;
-}
+
 
 .typewriter {
     
@@ -25,7 +23,11 @@ html {
 .openPage {
     margin: 0;
     position: relative;
+    
     background-image: url('../img/mountain_1.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     padding-bottom: 2%;
     max-height: 1300px;
