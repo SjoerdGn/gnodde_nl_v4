@@ -175,15 +175,30 @@ img {
 }
 
 
+.topnav svg {
+    max-height: 1em;
+    fill:rgb(235, 235, 235);
+    transform: translate(0%, 10%);
+}
+
+
+.vl {
+    border-left: 1px solid #f2f2f2;
+    height: 1.3em;
+  }
 
 
 /* Change the color of links on hover */
 
-.topnav a:hover {
+.topnav a:hover:not(.unclickable) {
     background-color: var(--c1);
-    color: rgb(77, 77, 77);
+    color: var(--c6);
+    fill: var(--c6);
 }
 
+.topnav a:hover svg {
+    fill:var(--c6);
+}
 
 /* Add a color to the active/current link */
 
