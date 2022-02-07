@@ -55,6 +55,7 @@ h1 {
     color: rgb(235, 235, 235);
     margin-bottom: .5em;
     margin-top: .5em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -113,7 +114,7 @@ img {
 }
 
 .footer a {
-    margin-left: 16px;
+    margin-left: 0px;
     text-decoration: none;
     padding: 6px;
 }
@@ -201,7 +202,7 @@ img {
     margin-bottom: auto;
     margin-top: auto;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 7px;
     padding-bottom: 5px;
     padding-left: 8px;
     padding-right: 8px;
@@ -212,7 +213,7 @@ img {
     margin-bottom: auto;
     margin-top: auto;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -302,8 +303,7 @@ img {
 
 
 #topnav2 {
-    width: calc(86% + 60px);
-    min-width: calc(400px);
+    width: calc(95% + 20px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -317,45 +317,17 @@ img {
 
 
 #maxwidth600 {
-    max-width: calc(42% + 100px);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
-    min-width: calc(400px)
+    width: calc(42% + 100px);
+    padding-right: max(calc(24% - 50px),2px);
+    padding-left: max(calc(24% - 50px),2px);
+    min-width: 250px
 }
 
 /* OLD NAVBAR */
 
-.navbar h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #3f3f3f;
-}
-
-.navbar .links {
-    margin-left: auto;
-}
-
-.navbar a {
-    margin-left: 16px;
-    text-decoration: none;
-    padding: 6px;
-}
-
-.navbar a:hover {
-    color: rgb(0, 0, 155);
-    text-decoration: underline;
-}
-
-.footer a:hover {
-    color: rgb(0, 0, 155);
-    text-decoration: underline;
-}
-
-.content {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-}
 
 .code {
     color: rgb(190, 190, 190);
@@ -376,16 +348,15 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
     padding-top: 5em;
 
-    width: calc(42% + 100px);
+    width: calc(42% + 200px);
     left: 50%;
     right: 50%;
     transform: translate(-50%, -0%);
-    padding-right: calc(24% - 50px);
-    padding-left: calc(24% - 50px);
-    min-width: calc(400px)
+    padding-right: max(calc(24% - 50px),2px);
+    padding-left: max(calc(24% - 50px),2px);
+    /*min-width: 300px;*/
 }
 
 
