@@ -134,17 +134,58 @@ img {
 
 @media screen and (max-width: 1100px) {
     .topnav h2 {
-        display:none;
+        display: none;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 870px) {
     .menuRight {
-        display:none;
+        display: none;
     }
+}
+
+
+
+.topnav .mobileMenu {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
 }
 
 /* Style the links inside the navigation bar */
+
+.mobileMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media screen and (min-width: 870px) {
+    .mobileMenu {
+        display: none;
+    }
+}
 
 .topnav a {
     float: right;
@@ -179,7 +220,7 @@ img {
 
 .topnav svg {
     max-height: 1em;
-    fill:rgb(235, 235, 235);
+    fill: rgb(235, 235, 235);
     transform: translate(0%, 10%);
 }
 
@@ -187,7 +228,7 @@ img {
 .vl {
     border-left: 1px solid #f2f2f2;
     height: 1.3em;
-  }
+}
 
 
 /* Change the color of links on hover */
@@ -199,7 +240,7 @@ img {
 }
 
 .topnav a:hover svg {
-    fill:var(--c6);
+    fill: var(--c6);
 }
 
 /* Add a color to the active/current link */
@@ -209,24 +250,71 @@ img {
     color: rgb(235, 235, 235);
 }
 
-#topnav2 {
-    max-width: 90%;
+
+
+
+#mobileMenuOut a {
+    background-color: rgba(20, 37, 49, 0.5);
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-/*
-position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding-top: 5em;
-    padding-right: 18%;
-    padding-left: 18%;
-    max-width: 50%;
-    min-width: 420px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -0%);
-*/
+
+
+
+
+#mobileMenuOut svg {
+    max-height: 1em;
+    fill: rgb(235, 235, 235);
+    transform: translate(0%, 10%);
+}
+
+
+
+/* Change the color of links on hover */
+
+#mobileMenuOut a:hover:not(.unclickable) {
+    background-color: var(--c1);
+    color: var(--c6);
+    fill: var(--c6);
+}
+
+#mobileMenuOut a:hover svg {
+    fill: var(--c6);
+}
+
+/* Add a color to the active/current link */
+
+#mobileMenuOut a.active {
+    background-color: var(--c4);
+    color: rgb(235, 235, 235);
+}
+
+#mobileMenuOut {
+    position: absolute;
+    z-index: 1;
+    right: 48px;
+
+}
+
+
+#topnav2 {
+    width: calc(86% + 60px);
+    min-width: calc(400px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#mobileMenuOut {
+    display: none;
+}
+
+
+
 
 #maxwidth600 {
     max-width: calc(42% + 100px);
@@ -290,7 +378,7 @@ section {
     align-items: center;
     min-height: 400px;
     padding-top: 5em;
-    
+
     width: calc(42% + 100px);
     left: 50%;
     right: 50%;
@@ -298,7 +386,6 @@ section {
     padding-right: calc(24% - 50px);
     padding-left: calc(24% - 50px);
     min-width: calc(400px)
-
 }
 
 
@@ -399,4 +486,10 @@ section img.proj_img {
 
 #gausscop {
     cursor: pointer;
+}
+
+
+#mobileMenuOut {
+    margin-left: auto;
+    margin-right: 0;
 }

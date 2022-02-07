@@ -11,3 +11,4 @@ function changeImage(id, imgOld, imgNew) {
         document.getElementById(id).src = imgOld;
     }
 }
+
