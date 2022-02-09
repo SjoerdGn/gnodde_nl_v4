@@ -38,7 +38,7 @@ body {
     /*background-image: url('../img/mountain_1.png');*/
     background-color: var(--c3);
     background-size: 100%;
-    padding: 3em;
+    padding: 0 2% 0 2%;
     /*
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -329,7 +329,7 @@ img {
 /* OLD NAVBAR */
 
 .openPage {
-    font-size: calc(1.8vw + 6px);
+    font-size: calc(1vw + 10px);
 }
 
 .code {
