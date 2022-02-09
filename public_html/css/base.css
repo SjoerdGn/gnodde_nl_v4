@@ -328,6 +328,9 @@ img {
 
 /* OLD NAVBAR */
 
+.openPage {
+    font-size: calc(1.8vw + 6px);
+}
 
 .code {
     color: rgb(190, 190, 190);
