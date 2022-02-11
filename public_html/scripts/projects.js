@@ -12,3 +12,18 @@ function changeImage(id, imgOld, imgNew) {
     }
 }
 
+function readMore(idButton, idText, idDots) {
+    var dots = document.getElementById(idDots);
+    var moreText = document.getElementById(idText);
+    var btnText = document.getElementById(idButton);
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  } 
