@@ -19,11 +19,11 @@ function readMore(idButton, idText, idDots) {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
+      btnText.innerHTML = "Read more &#8628;";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less";
+      btnText.innerHTML = "Read less &#8632;";
       moreText.style.display = "inline";
     }
   } 

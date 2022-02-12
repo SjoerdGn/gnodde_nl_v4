@@ -128,18 +128,59 @@
             </p>
             <img class='proj_img' id="loc_catch" src="img/location_catchment.png" alt="Overview image of case study"
                 title="Overview of case study" />
-            <p>
 
-                <a href="https://copulabayesnet.readthedocs.io/en/latest/">copulabayesnet</a>
+            <p>
+                For this case study, I decided to predict the maximum monthly daily average discharge of the river. For
+                this cause, I determined the most favourable Bayesian Network layout, given variables' relations and
+                prediction strength:
+            </p>
+            <img class='proj_img' id="loc_catch" src="img/FINALMODEL3.png" alt="Final model thesis NPBN"
+                title="Final model thesis NPBN" />
+
+            <p>
+                I tested this model with a Python package that I had written for this thesis, called
+                <a href="https://copulabayesnet.readthedocs.io/en/latest/">copulabayesnet</a>.
+                The final result had a Kling-Gupta efficiency, which is a hydrologic metric, of 0.79 (out of 1). That is
+                a very decent score
+                and was significantly higher than that of the currently in-use SOBEK model.
 
             </p>
+            <img class='proj_img' id="loc_catch" src="img/pred_target_fitted_model_4.png" alt="Results"
+                title="results" />
+            <p>The predictions and measurements of the monthly maximum daily average discharges.</p>
+
         </span>
-        <button class="readMoreButton" onclick="readMore('btn1', 'hiddenProj1', 'dots1')" id="btn1">Read more</button>
+        <button class="readMoreButton" onclick="readMore('btn1', 'hiddenProj1', 'dots1')" id="btn1">Read more
+            &#8628;</button>
 
     </section>
     <section class="red">
-        <h1>Serious game paper</h1>
-        <p>https://link.springer.com/chapter/10.1007/978-3-030-34350-7_38</p>
+        <h1>Serious game & paper: Hydro Hero</h1>
+
+        <p>With a group of five, I developed a so-called serious game for children to learn about
+            water management, especially water quality. In the game made for a course, called Hydro Hero, the
+            protagonist
+            has to remove all the disadvantageous matter from the water whilst leaving in the benificial
+            of neutral matter. While figuring out what matter belongs in which catogery,
+            children learn about their effects on the water. The reason behind this, is also taught
+            by letting breaking up the game with minigames.
+        </p>
+        <a href="https://dswaab.nl/hydrohero/"><img class='proj_img' id="hydroHero" src="img/hydrohero.png"
+                alt="Overview Hydro Hero" title="Overview of Hydro Hero" /></a>
+        <p>
+            You can play the game on <a href="https://dswaab.nl/hydrohero/"> the website of a group member of mine</a>.
+
+        </p>
+        <p>
+            We tested the game scientifically and proved that children indeed learn what belongs in the water and what
+            doesn't from this game
+            and we also found out that they very often knew the reason why this was the case. After the course, with the
+            help of some others,
+            I wrote a paper about our findings, which got published in
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-34350-7_38"> conference proceedings of a
+                education game alliance</a>.
+        </p>
+
         <div class="wave1" id="waveblue">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -174,7 +215,20 @@
     </section>
     <section class="red">
         <h1>MLFlow Collaboration wrapper</h1>
-        <p>https://gitlab.com/hetwaterschapshuis/kenniscentrum/tooling/mlflowcollab</p>
+        <p>For my job, I wrote a wrapper around MLFlow, which is a tool that allows for easily logging machine learning
+            experiments. I found out that
+            there are some drawbacks to MLFlow, of which I tackled the following:
+        </p>
+            <ol>
+            <li>1. Collaboration on a central locations is quite difficult with the original package.</li>
+            <li>2. Setting up the logging could be made easier and quicker.</li>
+            <li>3. Basic logging of standard packages could be made even easier.</li>
+        </ol>
+        <p>
+        In the package, called <a href="https://gitlab.com/hetwaterschapshuis/kenniscentrum/tooling/mlflowcollab">MLFlowCollab</a>,
+        setting up basic logging is way easier and saves a bit of time, collaboration is made way easier if a shared
+        folder is available
+        and scikit-learn logging has been turned into a oneliner, while keeping a lot of flexibility.</p>
         <div class="wave1" id='wavepink'>
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -183,6 +237,8 @@
                     class="shape-fill"></path>
             </svg>
     </section>
+    <section><p>(c) Sjoerd Gnodde, 2022</p></section>
+    
 </body>
 <script src="scripts/projects.js"></script>
 <script src="scripts/main.js"></script>
